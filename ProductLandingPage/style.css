@@ -1,0 +1,288 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background: white;
+}
+
+#header {
+    background: white;
+    top: 0;
+    position: fixed;
+    display: flex;
+    width: 90%;
+    margin: auto;
+    height: 10vh;
+    align-items: center;
+    z-index: 1;
+}
+
+.logo {
+    display: inherit;
+    flex: 1;
+    padding-left: 10px;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#header-img {
+    width: 200px;
+}
+
+nav {
+    flex: 1;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-links li{
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    font-family: inherit;
+    font-weight: 500;
+}
+
+
+.container {
+    position: relative;
+    top: 120px;
+    width: 80%;
+    margin: auto;
+}
+
+.caracteristcs {
+  width: 80%;
+  margin: auto;
+  padding-left: 3em;
+}
+
+.detail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.detail h2 {
+    font-size: 23px;
+    margin: 10px;
+}
+
+.detail input {
+    width: 20em;
+    height: 2.3em;
+    margin: 10px;
+    padding: 5px;
+}
+
+#submit {
+    background: rgb(252, 211, 28);
+    color: black;
+    font-size: 18px;
+    font-weight: 600;
+    align-items: center;
+    border: none;
+    margin-top: 10px;
+    width: 150px;
+    height: 2em;
+    border-radius: 3px;
+    pointer-events: all;
+}
+
+#submit:hover {
+  background: rgb(252, 211, 40);
+}
+
+.expl_box {
+    display: flex;
+    width: 70%;
+    height: 5em;
+    margin: 40px auto;
+    align-items: center;
+}
+
+.icon {
+    width: 75px;
+    height: 4em;
+    margin: 5px 40px 0 0;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.icon-detail {
+  width: 100%;
+}
+
+.fa-3x {
+    font-size: 3em;
+    color: darkorange;
+}
+.fa-fire:before{
+    content:"\f06d"
+}
+
+.fa-truck:before {
+    content: "\f0d1";
+}
+
+.fa-battery-full:before {
+    content: "\f240";
+}
+
+.video {
+    position: relative;
+    width: 80%;
+    margin: auto;
+    height: 30em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#video {
+    height: 20em;
+    width: 500px;
+}
+
+.prices{
+    position: relative;
+    width: 80%;
+    margin: auto;
+    height: 22em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 7px;
+}
+
+.box-detail {
+    width: 300px;
+    height: 20em;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 3px;
+    margin: 5px;
+}
+
+.box-header {
+    display: flex;
+    background: lightgray;
+    width: 100%;
+    height: 3em;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-detail h2, .box-detail p, .box-detail button {
+    margin: 15px;
+}
+
+.box-detail p {
+    width: 50%;
+    text-align: center;
+    margin-bottom: -5px;
+}
+
+.box-detail button {
+    margin-top: 40px;
+    background: rgb(252, 211, 28);
+    border: none;
+    color: black;
+    font-size: 18px;
+    font-weight: 530;
+    width: 120px;
+    height: 3.5em;
+}
+
+.box-detail button:hover {
+    background: rgb(252, 211, 50);
+}
+
+@media screen and (max-width: 900px) {
+  .prices {
+    position: relative;
+    top: 300px;
+    flex-direction: column;
+  }
+
+  .caracteristcs {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    padding-left: 0.5em;
+  }
+  
+  .expl_box{
+    width: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .icon {
+    display: none;
+  }
+  
+  #video {
+    width: 400px;
+  }
+  
+  #header {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+    height: 15vh;
+    align-items: center;
+  }
+  
+  .detail h2 {
+    font-size: 22px;
+  }
+
+  .logo {
+    display: inherit;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #header-img {
+    min-width: 100px;
+    height: 20px;
+  }
+
+  nav {
+    width: 80%;
+    align-items: center;
+  }
+
+  .nav-links {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .box-detail {
+    margin: 15px;
+  }
+}

@@ -1,0 +1,278 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+header {
+  position: fixed;
+  height: 8vh;
+  width: 100vw;
+  display: flex;
+  background: rgba(140, 30, 30, 1);
+  z-index: 1;
+  border-bottom: 1px solid black;
+}
+
+nav {
+  display: flex;
+  width: 60%;
+  margin-left: auto;
+  padding-right: 40px;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  width: 80%;
+}
+
+.nav-links li {
+  list-style-type: none;
+  width: 80%;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+  height: 8vh;
+  align-items: center;
+}
+
+.nav-link:hover {
+  background: rgba(140, 7, 7, 1);
+}
+
+.main-section {
+  position: relative;
+
+}
+
+#welcome-section {
+  background: #282828;
+  height: 100vh;
+}
+
+.container.detail {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  position: relative;
+  top: 50%;
+}
+
+.container.detail h1 {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 60px;
+  color: #E3E3E3;
+}
+
+.container.detail h3 {
+  font-family: 'Lobster', sans-serif;
+  font-size: 25px;
+  color: rgba(140, 40, 40, 1);
+}
+
+
+#projects {
+  background: #1D4872;
+  padding: 5rem 2rem;
+  color: white;
+}
+
+.proj-header {
+    width: 80%;
+    margin: 2rem auto;
+    text-align: center;
+    font-family: 'Roboto Slab', sans-serif;
+    font-size: 25px;
+}
+
+.project-grid {
+    display: grid;
+    width: 60%;
+    margin: auto;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 1rem;
+}
+
+.project-tile {
+    width: 100%;
+    border: 1px solid black;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    background: #282828;
+}
+
+.project-tile img {
+    width: 100%;
+    height: 90%;
+    object-fit: cover;
+}
+
+#contact {
+    height: 95vh;
+    padding: 8rem 2rem;
+    background: #3d3d3d;
+    color: white;
+}
+
+.social_cont { 
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 70vh;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.social_detail {
+    margin: 40px;
+    font-family: 'Ubuntu', sans-serif;
+    display: inherit;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.social_detail h1 {
+    font-size: 40px;
+}
+
+.social_detail p {
+    font-size: 18px;
+}
+
+.social_hub {
+    display: inherit;
+    flex-direction: row;
+}
+
+#social {
+    display: flex;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+#social:hover {
+    transition: ease-in-out 0.3s;
+    transform: translateY(20%);
+}
+
+#social i {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    height: 5vh;
+    border-top: 3px solid rgba(140, 30, 30, 0.534);
+    background: #3d3d3d;
+}
+
+.foot_detail {
+    position: relative;
+    width: 80%;
+    height: 50%;
+    margin: 10px auto;
+    color: white;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 715px) {    
+    .hamb {
+        width: 40px;
+        height: 35px;
+        position: fixed;
+        bottom: 10px;
+        right: 5px;
+        cursor: pointer;
+        z-index: 2;
+      }
+    
+    .line {
+        width: 80%;
+        height: 5px;
+        background: black;
+        margin: 5px;
+      }
+
+    .header {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        bottom: 0px;
+        right: 0;
+        height: 25vh;
+        width: 300px;
+        z-index: 1;
+        clip-path: circle(100px at 110% 90%);
+        -webkit-clip-path: circle(100px at 110% 110%);
+        transition: all 1s ease-out;        
+        pointer-events: none;
+      }
+
+    .header.open {
+        clip-path: circle(300px at 110% 90%);
+        -webkit-clip-path: circle(400px at 110% 110%);        
+        pointer-events: all;
+      }
+
+    nav {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+      }
+      
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        height: 25vh;
+        width: 100%;
+    }      
+
+    .nav-links li {
+        width: 100%;
+    }
+    
+    .social_hub {
+        flex-direction: column;
+    }
+
+    .social_detail h1 {
+        font-size: 35px;
+    }
+    
+    .social_detail p {
+        font-size: 16px;
+    }
+
+    #social {
+      justify-content: flex-start;
+    }
+
+    .tel i {
+      margin-left: 4px;
+      padding-right: 4px;
+    }
+}

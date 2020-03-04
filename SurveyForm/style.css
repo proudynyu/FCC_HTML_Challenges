@@ -1,0 +1,115 @@
+body{
+    background-image: linear-gradient( 115deg,
+     rgba(58, 58, 158, 0.8),
+     rgba(136, 136, 206, 0.7) ),
+     url(https://raw.githubusercontent.com/lasjorg/fcc-form-example-image/master/67103817-7c51e200-f18b-11e9-975f-f74561336a9a-lj.jpg);
+    font-family: sans-serif;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: var(--color-darkblue);
+    background-image: linear-gradient(
+        115deg,
+        rgba(58, 58, 158, 0.8),
+        rgba(136, 136, 206, 0.7)
+      ),
+      url(https://raw.githubusercontent.com/lasjorg/fcc-form-example-image/master/67103817-7c51e200-f18b-11e9-975f-f74561336a9a-lj.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+  
+.survey-form {
+    background-color: rgb(27, 27, 50, 0.8);
+    display: block;
+    box-sizing: border-box;
+    border-radius: 5px;
+    width: 50em;
+    height: 1500px;
+    padding: 40px 15px;
+}
+
+.form-info {
+    width: 90%;
+    margin: auto;
+    padding: 15px;
+}
+
+.config-label {
+    display: flex;
+    font-size: 20px;
+}
+
+.config-input {
+    display: block;
+    width: 100%;
+    height: 40px;
+    border-radius: 3px;
+    border-style: none;
+    margin-top: 10px;
+    color: rgb(51, 51, 51);
+    font-size: 18px;
+    padding-left: 12px;
+}
+
+.op {
+    font-size: 14px;
+}
+
+.check-label {
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+}
+
+.radio-btn{
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+}
+
+#radio-btn {
+    width: 20px;
+    height: 20px;
+    margin: 5px 10px 5px 0;
+}
+
+#checkbox-btn {
+    display: inline;
+    width: 20px;
+    height: 20px;
+    margin: 5px 10px 5px 0;
+}
+
+#comments {
+    width: 95%;
+    padding: 15px;
+    font-size: 18px;
+    border-radius: 4px;
+}
+
+.smt-btn {
+    width: 100%;
+    height: 3em;
+    color: white;
+    background: #37af65;
+    border: none;
+    border-radius: 3px;
+}
+
+@media screen and (max-width: 1000px){
+    .survey-form {
+        max-width: 540px;
+    }
+}
